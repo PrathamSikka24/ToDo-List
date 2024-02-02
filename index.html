@@ -1,27 +1,36 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>To-Do List App</title>
-</head>
-<body>
-  <h1>To-Do List</h1>
-  <input type="text" id="input" placeholder="Enter a new to-do item">
-  <button id="add_btn">Add</button>
-  <ul id="item_list_container"></ul>
-  <button id="remove-button">Remove</button>
-
-  <script src="script.js"></script>
-</body>
-</html>
-
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+  <nav class="navbar">
+    <div class="navbar-brand">Todo App</div>
+    <ul class="navbar-menu">
+      <li><a href="#" class="navbar-link">Features</a></li>
+      <li><a href="#" class="navbar-link">Login</a></li>
+      <li><a href="#" class="navbar-link">Signup</a></li>
+      <li><a href="#" class="navbar-link">Pricing</a></li>
+    </ul>
+  </nav>
+
+  <div class="todos-container">
+    <div class="todo-input">
+        <textarea name="todoInput" type="text" id="todoInput" placeholder="Enter your todo" cols="30" rows="10"></textarea>
+
+        <button onclick="addTodo()">Save</button>
+    </div>
+    <div class="todo-list" id="todoList"></div>
+  </div>
+
+  <div class="landing">
+    <h2 class="quote">"Productivity is never an accident. It is always the result of a commitment to excellence,       intelligent planning, and focused effort." - Paul J. Meyer</h2>
+  </div>
+
+  <!-- Your todo app content will go here -->
+<script src="script.js"></script>
 </body>
 </html>
-
